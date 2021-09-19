@@ -1,88 +1,55 @@
 <!doctype html>
 <title>PhotoGallery</title>
+<header class="headerContainer"> 
+  <h1> Art Gallery </br>Collect At Its Best...</h1>
+  <span class="logo">
+  </span>
+</header>
 <style>
   .cards {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid black;
-    align-items: stretch;
-    background-color: rgb(216, 166, 166);
-    
-
-
+    align-items: flex-start;
+    flex-direction: column;
+    max-height: 100vh;
+ 
   }
-  .card {
-    flex: 0 0 200px;
+  .cards img {
     margin: 10px;
-    border: 3px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    box-shadow: 2px 2px 6px 0px  black;
-  } 
-  .card img {
-    max-width: 98%;
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 10px;
+    border: 3px solid #000;
+    box-shadow: 5px 5px 5px 5px rgba(201, 123, 123, 0.3); 
+    max-width: 23vw;
+    
   }
-  .card .text {
-    padding: 0 20px 20px;
-    border-radius: 10px;
+  .image3
+  {
+    filter: grayscale(100%);
   }
-  .card .text > button {
-    background: gray;
-    border: 0;
-    color: white;
+  .headerContainer
+{
+    display: flex;
+    flex-flow: column wrap; 
+    align-content: center;
+    background-color: rgb(219, 218, 138);
+    border: 1px solid black;
+    border-radius: 10px;
     padding: 10px;
-    width: 100%;
-    }
-</style>
+    color: rgb(15, 14, 14);
+}
+h1 
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
+</style>
 <main class="cards">
-  <article class="card">
-    <img src="../assets/23m.jpg" alt="Sample photo">
-    <div class="text">
-      <h3>Seamlessly visualize quality</h3>
-      <p>Collaboratively administrate empowered markets via plug-and-play networks.</p>
-      <button>Here's why</button>
-    </div>
-  </article>
-  <article class="card">
-    <img src="../assets/24m.jpg" alt="Sample photo">
-    <div class="text">
-      <h3>Completely Synergize</h3>
-      <p>Dramatically engage seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.</p>
-      <button>Here's how</button>
-    </div>
-  </article>
-  <article class="card">
-    <img src="../assets/221.jpg" alt="Sample photo">
-    <div class="text">
-      <h3>Dynamically Procrastinate</h3>
-      <p>Completely synergize resource taxing relationships via premier niche markets.</p>
-      <button>Read more</button>
-    </div>
-  </article>
-  <article class="card">
-    <img src="../assets/15l.jpg" alt="Sample photo">
-    <div class="text">
-      <h3>Best in class</h3>
-      <p>Imagine jumping into that boat, and just letting it sail wherever the wind takes you...</p>
-      <button>Just do it...</button>
-    </div>
-  </article>
-  <article class="card">
-    <img src="../assets/25m.jpg" alt="Sample photo">
-    <div class="text">
-      <h3>Dynamically innovate supply chains</h3>
-      <p>Holisticly predominate extensible testing procedures for reliable supply chains.</p>
-      <button>Here's why</button>
-    </div>
-  </article>
-  <article class="card">
-    <img src="../assets/16l.jpg" alt="Sample photo">
-    <div class="text">
-      <h3>Sanity check</h3>
-      <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
-      <button>Stop here</button>
-    </div>
-  </article>
-</main> 
+  <img src="../assets/23m.jpg" alt="Sample photo">
+  <img src="../assets/24m.jpg" alt="Sample photo">
+  <img src="../assets/22m.jpg" alt="Sample photo"> <!--<img class ="image3"alt="Sample photo"> <img class ="image3" src="../assets/22m.jpg" alt="Sample photo">-->>
+  <img src="../assets/28m.jpg" alt="Sample photo">
+  <img src="../assets/29m.jpg" alt="Sample photo">
+  <img src="../assets/30m.jpg" alt="Sample photo">
+  <img src="../assets/27m.jpg" alt="Sample photo">
+  <img src="../assets/33m.jpg" alt="Sample photo">
+  <footer class="footerText"> © 2011-2021 by TheAnalyst.com, Inc. </footer>
+</main>
