@@ -1,0 +1,100 @@
+h2 > span:hover:before 
+{
+    position: absolute;
+}
+h2 > span:hover:before,
+h2 > span:hover ~ span:before
+{
+    position: absolute;
+}
+html
+{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #b88fd3;
+}
+.headerContainer
+{
+    display: flex;
+    flex-flow: column wrap; 
+    align-content: center;
+    background-color: rgb(85, 120, 134);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    color: rgb(15, 14, 14);
+}
+.footerText
+{
+    display: flex;
+    flex-flow: column wrap; 
+    align-content: center;
+    background-color: rgb(231, 100, 100);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    color: rgb(15, 14, 14);
+}
+.mainContainer
+{
+    display: flex;
+    flex-flow: row wrap;
+    font-weight : bold;
+    text-align: center;
+}
+.maincontentItem
+{
+    text-align: left;
+}
+article
+{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    background: rgb(224, 214, 216);
+}
+.logo
+{
+    width: 5em;
+    height: 5em;
+    background: url('../assets/title.png');
+    background-size: cover;
+    background-position: center;
+    margin: -90px 0 0 -100px;
+    border: 2px solid rgb(167, 154, 154);
+    border-radius: 30px;
+    align-items: left;
+}
+.sideBarLeftItem
+{
+    background : rgb(196, 73, 93);
+    border-radius: 10px;
+    margin: 1;
+    text-align: left;
+    margin: 5px 5px;
+    padding: 10px;
+}
+.sideBarRightItem
+{
+    background : rgb(196, 44, 118);
+    border-radius: 10px;
+    text-align: left;
+    margin: 5px 5px;
+    padding: 10px;
+}
+.sideBarItem
+{
+    flex: 1 0 0;
+    border: 0px solid green;
+}
+.maincontentItem
+{
+    flex: 3 0px;
+}
+.sideBarLeftItem {order:1; }
+.maincontentItem
+{
+    flex: 3 0px;
+    order: 2;
+}
+.sideBarRightItem {order:3;}
